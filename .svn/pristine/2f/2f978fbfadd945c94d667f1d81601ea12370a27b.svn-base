@@ -1,0 +1,12 @@
+﻿using System.Windows.Forms;
+
+namespace ObligatorioIS2
+{
+    public partial class DetalleDeProducto : Form
+    {
+        public DetalleDeProducto(Producto producto)
+        {
+            InitializeComponent();
+        }
+    }
+}

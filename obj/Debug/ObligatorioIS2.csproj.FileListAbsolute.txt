@@ -1,0 +1,64 @@
+c:\users\pato\documents\visual studio 2013\Projects\ObligatorioIS2\bin\Debug\ObligatorioIS2.exe.config
+C:\Users\PatO\documents\visual studio 2013\Projects\ObligatorioIS2\obj\Debug\ObligatorioIS2.csprojResolveAssemblyReference.cache
+C:\Users\PatO\documents\visual studio 2013\Projects\ObligatorioIS2\obj\Debug\ObligatorioIS2.Properties.Resources.resources
+C:\Users\PatO\documents\visual studio 2013\Projects\ObligatorioIS2\obj\Debug\ObligatorioIS2.csproj.GenerateResource.Cache
+C:\Users\PatO\documents\visual studio 2013\Projects\ObligatorioIS2\bin\Debug\ObligatorioIS2.exe
+C:\Users\PatO\documents\visual studio 2013\Projects\ObligatorioIS2\bin\Debug\ObligatorioIS2.pdb
+C:\Users\PatO\documents\visual studio 2013\Projects\ObligatorioIS2\obj\Debug\ObligatorioIS2.exe
+C:\Users\PatO\documents\visual studio 2013\Projects\ObligatorioIS2\obj\Debug\ObligatorioIS2.pdb
+C:\Users\PatO\documents\visual studio 2013\Projects\ObligatorioIS2\obj\Debug\ObligatorioIS2.MenuPpal.resources
+C:\Users\PatO\documents\visual studio 2013\Projects\ObligatorioIS2\obj\Debug\ObligatorioIS2.Login.resources
+C:\SVN\IS2_Codigo\ObligatorioIS2\bin\Debug\ObligatorioIS2.exe.config
+C:\SVN\IS2_Codigo\ObligatorioIS2\obj\Debug\ObligatorioIS2.exe
+C:\SVN\IS2_Codigo\ObligatorioIS2\obj\Debug\ObligatorioIS2.pdb
+C:\Users\PatO\Documents\_FAC\IS2\bin\Debug\ObligatorioIS2.exe.config
+C:\Users\PatO\Documents\_FAC\IS2\obj\Debug\ObligatorioIS2.exe
+C:\Users\PatO\Documents\_FAC\IS2\obj\Debug\ObligatorioIS2.pdb
+C:\Users\PatO\Documents\_FAC\IS2\bin\Debug\ObligatorioIS2.exe
+C:\Users\PatO\Documents\_FAC\IS2\bin\Debug\ObligatorioIS2.pdb
+C:\Users\PatO\Documents\_FAC\IS2\obj\Debug\ObligatorioIS2.BuscarProducto.resources
+C:\Users\PatO\Documents\_FAC\IS2\obj\Debug\ObligatorioIS2.MenuPpal.resources
+C:\Users\PatO\Documents\_FAC\IS2\obj\Debug\ObligatorioIS2.Properties.Resources.resources
+C:\Users\PatO\Documents\_FAC\IS2\obj\Debug\ObligatorioIS2.Login.resources
+C:\Users\PatO\Documents\_FAC\IS2\obj\Debug\ObligatorioIS2.csproj.GenerateResource.Cache
+C:\Users\PatO\Documents\_FAC\IS2\obj\Debug\ObligatorioIS2.DetalleDeProducto.resources
+C:\Users\PatO\Documents\_FAC\IS2\obj\Debug\ObligatorioIS2.csprojResolveAssemblyReference.cache
+C:\Users\PatO\Documents\_FAC\IS2\obj\Debug\ObligatorioIS2.GestionarUsuarios.resources
+C:\Users\PatO\Documents\_FAC\IS2\obj\Debug\ObligatorioIS2.NuevoUsuario.resources
+C:\Users\PatO\Documents\_FAC\IS2\obj\Debug\ObligatorioIS2.ResultadoNuevoUsuario.resources
+C:\Users\mmustafa\Desktop\IS2\bin\Debug\ObligatorioIS2.exe.config
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.exe
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.pdb
+C:\Users\mmustafa\Desktop\IS2\bin\Debug\ObligatorioIS2.exe
+C:\Users\mmustafa\Desktop\IS2\bin\Debug\ObligatorioIS2.pdb
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.csprojResolveAssemblyReference.cache
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.BuscarProducto.resources
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.DetalleDeProducto.resources
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.GestionarUsuarios.resources
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.MenuPpal.resources
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.NuevoUsuario.resources
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.Properties.Resources.resources
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.Login.resources
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.ResultadoNuevoUsuario.resources
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.csproj.GenerateResource.Cache
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.EditarUsuarios.resources
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.ResultadoActUsuario.resources
+C:\Users\mmustafa\Desktop\IS2\obj\Debug\ObligatorioIS2.EliminarUsuario.resources
+C:\Users\PatO\Desktop\IS2\bin\Debug\ObligatorioIS2.exe.config
+C:\Users\PatO\Desktop\IS2\bin\Debug\ObligatorioIS2.exe
+C:\Users\PatO\Desktop\IS2\bin\Debug\ObligatorioIS2.pdb
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.csprojResolveAssemblyReference.cache
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.BuscarProducto.resources
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.DetalleDeProducto.resources
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.EditarUsuarios.resources
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.EliminarUsuario.resources
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.GestionarUsuarios.resources
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.MenuPpal.resources
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.NuevoUsuario.resources
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.Properties.Resources.resources
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.Login.resources
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.ResultadoActUsuario.resources
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.ResultadoNuevoUsuario.resources
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.csproj.GenerateResource.Cache
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.exe
+C:\Users\PatO\Desktop\IS2\obj\Debug\ObligatorioIS2.pdb
