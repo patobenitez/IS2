@@ -1,19 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ObligatorioIS2.Business_Logic;
 
-namespace ObligatorioIS2
+namespace ObligatorioIS2.View
 {
     public partial class EditarUsuarios : Form
     {
-        public Usuario usuario { get; set; }
+        public Usuario Usuario { get; set; }
         public EditarUsuarios()
         {
             InitializeComponent();
@@ -25,13 +19,13 @@ namespace ObligatorioIS2
 
         private void cmbBoxUsuarios_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            usuario = (Usuario)cmbBoxUsuarios.SelectedItem;
+            Usuario = (Usuario)cmbBoxUsuarios.SelectedItem;
 
-            txtNombre.Text = usuario.Nombre;
-            txtApellido.Text = usuario.Apellido;
-            txtCelular.Text = usuario.Celular;
-            txtDireccion.Text = usuario.Direccion;
-            txtMail.Text = usuario.Email;
+            txtNombre.Text = Usuario.Nombre;
+            txtApellido.Text = Usuario.Apellido;
+            txtCelular.Text = Usuario.Celular;
+            txtDireccion.Text = Usuario.Direccion;
+            txtMail.Text = Usuario.Email;
             
         }
 
@@ -95,7 +89,7 @@ namespace ObligatorioIS2
             }
 
             foreach (Usuario usu in Sistema.GetInstance().ListaUsuarios) {
-                if (usuario.Nombre == usu.Nombre && usuario.Apellido == usu.Apellido) {
+                if (Usuario.Nombre == usu.Nombre && Usuario.Apellido == usu.Apellido) {
                     usu.Nombre = txtNombre.Text;
                     usu.Apellido = txtApellido.Text; 
                     usu.Celular = txtCelular.Text ;

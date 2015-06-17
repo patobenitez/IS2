@@ -44,91 +44,91 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuscarProducto.cs">
+    <Compile Include="View\BuscarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarProducto.Designer.cs">
+    <Compile Include="View\BuscarProducto.Designer.cs">
       <DependentUpon>BuscarProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetalleDeProducto.cs">
+    <Compile Include="View\DetalleDeProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetalleDeProducto.Designer.cs">
+    <Compile Include="View\DetalleDeProducto.Designer.cs">
       <DependentUpon>DetalleDeProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditarUsuarios.cs">
+    <Compile Include="View\EditarUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditarUsuarios.Designer.cs">
+    <Compile Include="View\EditarUsuarios.Designer.cs">
       <DependentUpon>EditarUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="EliminarUsuario.cs">
+    <Compile Include="View\EliminarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EliminarUsuario.Designer.cs">
+    <Compile Include="View\EliminarUsuario.Designer.cs">
       <DependentUpon>EliminarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionarUsuarios.cs">
+    <Compile Include="View\GestionarUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionarUsuarios.Designer.cs">
+    <Compile Include="View\GestionarUsuarios.Designer.cs">
       <DependentUpon>GestionarUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Helpers.cs" />
-    <Compile Include="MenuPpal.cs">
+    <Compile Include="Helpers\Helpers.cs" />
+    <Compile Include="View\MenuPpal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPpal.Designer.cs">
+    <Compile Include="View\MenuPpal.Designer.cs">
       <DependentUpon>MenuPpal.cs</DependentUpon>
     </Compile>
-    <Compile Include="NuevoUsuario.cs">
+    <Compile Include="View\NuevoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NuevoUsuario.Designer.cs">
+    <Compile Include="View\NuevoUsuario.Designer.cs">
       <DependentUpon>NuevoUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Producto.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Business Logic\Producto.cs" />
+    <Compile Include="Business Logic\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResultadoActUsuario.cs">
+    <Compile Include="View\ResultadoActUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ResultadoActUsuario.Designer.cs">
+    <Compile Include="View\ResultadoActUsuario.Designer.cs">
       <DependentUpon>ResultadoActUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="ResultadoNuevoUsuario.cs">
+    <Compile Include="View\ResultadoNuevoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ResultadoNuevoUsuario.Designer.cs">
+    <Compile Include="View\ResultadoNuevoUsuario.Designer.cs">
       <DependentUpon>ResultadoNuevoUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sistema.cs" />
-    <Compile Include="Usuario.cs" />
-    <Compile Include="Login.cs">
+    <Compile Include="Business Logic\Sistema.cs" />
+    <Compile Include="Business Logic\Usuario.cs" />
+    <Compile Include="View\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="View\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BuscarProducto.resx">
+    <EmbeddedResource Include="View\BuscarProducto.resx">
       <DependentUpon>BuscarProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetalleDeProducto.resx">
+    <EmbeddedResource Include="View\DetalleDeProducto.resx">
       <DependentUpon>DetalleDeProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditarUsuarios.resx">
+    <EmbeddedResource Include="View\EditarUsuarios.resx">
       <DependentUpon>EditarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EliminarUsuario.resx">
+    <EmbeddedResource Include="View\EliminarUsuario.resx">
       <DependentUpon>EliminarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionarUsuarios.resx">
+    <EmbeddedResource Include="View\GestionarUsuarios.resx">
       <DependentUpon>GestionarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPpal.resx">
+    <EmbeddedResource Include="View\MenuPpal.resx">
       <DependentUpon>MenuPpal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NuevoUsuario.resx">
+    <EmbeddedResource Include="View\NuevoUsuario.resx">
       <DependentUpon>NuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -140,13 +140,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="View\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResultadoActUsuario.resx">
+    <EmbeddedResource Include="View\ResultadoActUsuario.resx">
       <DependentUpon>ResultadoActUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResultadoNuevoUsuario.resx">
+    <EmbeddedResource Include="View\ResultadoNuevoUsuario.resx">
       <DependentUpon>ResultadoNuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

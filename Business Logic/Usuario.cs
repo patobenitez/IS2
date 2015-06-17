@@ -1,4 +1,4 @@
-﻿namespace ObligatorioIS2
+﻿namespace ObligatorioIS2.Business_Logic
 {
     public class Usuario
     {

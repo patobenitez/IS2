@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ObligatorioIS2
+namespace ObligatorioIS2.Business_Logic
 {
     public class Sistema
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Windows.Forms;
 
-namespace ObligatorioIS2
+namespace ObligatorioIS2.View
 {
     partial class Login
     {

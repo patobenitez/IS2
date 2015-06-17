@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Reflection;
 
-namespace ObligatorioIS2
+namespace ObligatorioIS2.Helpers
 {
     public static class Helpers
     {

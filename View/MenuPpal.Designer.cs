@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace ObligatorioIS2
+namespace ObligatorioIS2.View
 {
     partial class MenuPpal
     {

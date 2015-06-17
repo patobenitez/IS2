@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ObligatorioIS2
+namespace ObligatorioIS2.View
 {
     public partial class ResultadoActUsuario : Form
     {
@@ -16,7 +9,7 @@ namespace ObligatorioIS2
         {
             InitializeComponent();
             label1.Text = message;
-            pictureBox1.Image = Helpers.GetPathImagen(!success ? "forbidden.png" : "success.png");
+            pictureBox1.Image = Helpers.Helpers.GetPathImagen(!success ? "forbidden.png" : "success.png");
         }
 
         private void button1_Click(object sender, EventArgs e)

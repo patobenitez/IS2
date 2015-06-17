@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace ObligatorioIS2
+namespace ObligatorioIS2.View
 {
     public partial class MenuPpal : Form
     {

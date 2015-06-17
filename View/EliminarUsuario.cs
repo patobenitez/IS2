@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ObligatorioIS2.Business_Logic;
 
-namespace ObligatorioIS2
+namespace ObligatorioIS2.View
 {
     public partial class EliminarUsuario : Form
     {
-        public Usuario usuario { get; set; }
+        public Usuario Usuario { get; set; }
         public EliminarUsuario()
         {
             InitializeComponent();
@@ -20,13 +14,13 @@ namespace ObligatorioIS2
             {
                 cmbBoxUsuarios.Items.Add(usu);
             }
-            usuario = new Usuario();
+            Usuario = new Usuario();
         }
 
 
         private void cmbBoxUsuarios_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            usuario = (Usuario)cmbBoxUsuarios.SelectedItem;
+            Usuario = (Usuario)cmbBoxUsuarios.SelectedItem;
 
         }
 
@@ -34,10 +28,10 @@ namespace ObligatorioIS2
         {
             try
             {
-               DialogResult result = MessageBox.Show("Seguro que desea eliminar el usuario "+ usuario.Nombre + "" + usuario.Apellido , "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+               DialogResult result = MessageBox.Show("Seguro que desea eliminar el usuario "+ Usuario.Nombre + "" + Usuario.Apellido , "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                if (result == DialogResult.Yes)
                {
-                   Sistema.GetInstance().ListaUsuarios.Remove(usuario);
+                   Sistema.GetInstance().ListaUsuarios.Remove(Usuario);
                    MessageBox.Show("Error usuario se elimino correctamente", "Eliminar usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
                    cmbBoxUsuarios.Items.Clear();
                    foreach (Usuario usu in Sistema.GetInstance().ListaUsuarios)

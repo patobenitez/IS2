@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using ObligatorioIS2.View;
 
-namespace ObligatorioIS2
+namespace ObligatorioIS2.Business_Logic
 {
     static class Program
     {

@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using ObligatorioIS2.Business_Logic;
 
-namespace ObligatorioIS2
+namespace ObligatorioIS2.View
 {
     public partial class DetalleDeProducto : Form
     {
@@ -36,7 +37,7 @@ namespace ObligatorioIS2
                 button2.Hide();
                 groupBox5.BringToFront();
                 label4.Text = string.Format("No se encontro producto con ese {0}", _condicionBuscada);
-                pictureBox5.Image = Helpers.GetPathImagen("forbidden.png");
+                pictureBox5.Image = Helpers.Helpers.GetPathImagen("forbidden.png");
             }
             else
             {
@@ -46,7 +47,7 @@ namespace ObligatorioIS2
                 label2.Text = string.Format("Codigo: " + " {0} " + "Descripcion: {1}", _producto.Codigo,
                     _producto.Descripcion);
                 label3.Text = _producto.Precio;
-                pictureBox1.Image = Helpers.GetPathImagen(_producto.PathImagen);
+                pictureBox1.Image = Helpers.Helpers.GetPathImagen(_producto.PathImagen);
             }
         }
         
@@ -79,9 +80,9 @@ namespace ObligatorioIS2
             {
                 resList.Remove(_producto.PathImagen);
             }
-            pictureBox2.Image = Helpers.GetPathImagen(resList[0]);
-            pictureBox3.Image = Helpers.GetPathImagen(resList[1]);
-            pictureBox4.Image = Helpers.GetPathImagen(resList[2]);
+            pictureBox2.Image = Helpers.Helpers.GetPathImagen(resList[0]);
+            pictureBox3.Image = Helpers.Helpers.GetPathImagen(resList[1]);
+            pictureBox4.Image = Helpers.Helpers.GetPathImagen(resList[2]);
         }
     }
 }

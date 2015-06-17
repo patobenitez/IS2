@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Windows.Forms;
+using ObligatorioIS2.Business_Logic;
 
-namespace ObligatorioIS2
+namespace ObligatorioIS2.View
 {
     public partial class BuscarProducto : Form
     {
