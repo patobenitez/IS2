@@ -9,6 +9,7 @@ namespace ObligatorioIS2.View
     public partial class EditarUsuarios : Form
     {
         public Usuario Usuario { get; set; }
+
         public EditarUsuarios()
         {
             InitializeComponent();
@@ -40,70 +41,79 @@ namespace ObligatorioIS2.View
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (!ValidateString(txtNombre.Text))
+            if (cmbBoxUsuarios.SelectedItem == null)
             {
-                Hide();
-                var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Nombre de usuario invalido!");
-                venResultadoNuevoUsu.Show();
-                return;
+                MessageBox.Show("Debe seleccionar un usuario para modificar", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            if (!ValidateString(txtApellido.Text))
+            else
             {
-                Hide();
-                var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Apellido de usuario invalido!");
-                venResultadoNuevoUsu.Show();
-                return;
-            }
-            if (!ValidPassword(txtPass.Text))
-            {
-                Hide();
-                var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Contraseña invalida. Muy corta o no cumple con los requisitos de seguridad.");
-                venResultadoNuevoUsu.Show();
-                return;
-            }
-            if (!MatchingPasswords(txtPass.Text, txtPassConfir.Text))
-            {
-                Hide();
-                var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Confirmacion de contraseña invalida");
-                venResultadoNuevoUsu.Show();
-                return;
-            }
-            if (!ValidateAddress(txtDireccion.Text))
-            {
-                Hide();
-                var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Direccion invalida");
-                venResultadoNuevoUsu.Show();
-                return;
-            }
-            if (!ValidPhone(txtCelular.Text))
-            {
-                Hide();
-                var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Telefono celular invalido");
-                venResultadoNuevoUsu.Show();
-                return;
-            }
-            if (!ValidEmailAddress(txtMail.Text))
-            {
-                Hide();
-                var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Mail invalido");
-                venResultadoNuevoUsu.Show();
-                return;
-            }
+                if (!ValidateString(txtNombre.Text))
+                {
+                    Hide();
+                    var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Nombre de usuario invalido!");
+                    venResultadoNuevoUsu.Show();
+                    return;
+                }
+                if (!ValidateString(txtApellido.Text))
+                {
+                    Hide();
+                    var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Apellido de usuario invalido!");
+                    venResultadoNuevoUsu.Show();
+                    return;
+                }
+                if (!ValidPassword(txtPass.Text))
+                {
+                    Hide();
+                    var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false,
+                        "Contraseña invalida. Muy corta o no cumple con los requisitos de seguridad.");
+                    venResultadoNuevoUsu.Show();
+                    return;
+                }
+                if (!MatchingPasswords(txtPass.Text, txtPassConfir.Text))
+                {
+                    Hide();
+                    var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Confirmacion de contraseña invalida");
+                    venResultadoNuevoUsu.Show();
+                    return;
+                }
+                if (!ValidateAddress(txtDireccion.Text))
+                {
+                    Hide();
+                    var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Direccion invalida");
+                    venResultadoNuevoUsu.Show();
+                    return;
+                }
+                if (!ValidPhone(txtCelular.Text))
+                {
+                    Hide();
+                    var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Telefono celular invalido");
+                    venResultadoNuevoUsu.Show();
+                    return;
+                }
+                if (!ValidEmailAddress(txtMail.Text))
+                {
+                    Hide();
+                    var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Mail invalido");
+                    venResultadoNuevoUsu.Show();
+                    return;
+                }
 
-            foreach (var usu in Sistema.GetInstance().ListaUsuarios
-                .Where(usu => Usuario.Nombre == usu.Nombre && Usuario.Apellido == usu.Apellido))
-            {
-                usu.Nombre = txtNombre.Text;
-                usu.Apellido = txtApellido.Text;
-                usu.Celular = txtCelular.Text;
-                usu.Direccion = txtDireccion.Text;
-                usu.Email = txtMail.Text;
-                usu.Password = txtPass.Text;
-            }
+                foreach (var usu in Sistema.GetInstance().ListaUsuarios
+                    .Where(usu => Usuario.Nombre == usu.Nombre && Usuario.Apellido == usu.Apellido))
+                {
+                    usu.Nombre = txtNombre.Text;
+                    usu.Apellido = txtApellido.Text;
+                    usu.Celular = txtCelular.Text;
+                    usu.Direccion = txtDireccion.Text;
+                    usu.Email = txtMail.Text;
+                    usu.Password = txtPass.Text;
+                }
 
-            Hide();
-            var venResultadoActuUsua = new ResultadoActUsuario(true, "El usuario se actualizo correctamente!");
-            venResultadoActuUsua.Show();          
+                Hide();
+                var venResultadoActuUsua = new ResultadoActUsuario(true, "El usuario se actualizo correctamente!");
+                venResultadoActuUsua.Show();
+            }
         }
 
         private static bool ValidPhone(string phone)

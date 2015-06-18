@@ -27,7 +27,7 @@ namespace ObligatorioIS2.View
         {
             if (cmbBoxUsuarios.Items.Count == 0)
             {
-                MessageBox.Show("Debe seleccionar un usuario para eliminar");
+                MessageBox.Show("Debe seleccionar un usuario para eliminar", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
             }
             else
             {

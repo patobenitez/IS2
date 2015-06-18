@@ -97,3 +97,4 @@ C:\Projects\IS2\Codigo\obj\Debug\ObligatorioIS2.View.Login.resources
 C:\Projects\IS2\Codigo\obj\Debug\ObligatorioIS2.View.ResultadoActUsuario.resources
 C:\Projects\IS2\Codigo\obj\Debug\ObligatorioIS2.View.ResultadoNuevoUsuario.resources
 C:\Projects\IS2\Codigo\obj\Debug\ObligatorioIS2.csproj.GenerateResource.Cache
+C:\Projects\IS2\Codigo\obj\Debug\ObligatorioIS2.csprojResolveAssemblyReference.cache
