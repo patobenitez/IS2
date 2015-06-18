@@ -82,6 +82,7 @@
             this.ClientSize = new System.Drawing.Size(298, 201);
             this.Controls.Add(this.groupBox1);
             this.Name = "ResultadoActUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ResultadoActUsuario";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbBoxUsuarios = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnVolver = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbBoxUsuarios = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,23 +47,15 @@
             this.panel1.Size = new System.Drawing.Size(374, 138);
             this.panel1.TabIndex = 0;
             // 
-            // cmbBoxUsuarios
+            // btnEliminar
             // 
-            this.cmbBoxUsuarios.FormattingEnabled = true;
-            this.cmbBoxUsuarios.Location = new System.Drawing.Point(27, 47);
-            this.cmbBoxUsuarios.Name = "cmbBoxUsuarios";
-            this.cmbBoxUsuarios.Size = new System.Drawing.Size(320, 21);
-            this.cmbBoxUsuarios.TabIndex = 2;
-            this.cmbBoxUsuarios.SelectionChangeCommitted += new System.EventHandler(this.cmbBoxUsuarios_SelectionChangeCommitted);            
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Seleccione usuario que desea eliminar";
+            this.btnEliminar.Location = new System.Drawing.Point(234, 100);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(113, 23);
+            this.btnEliminar.TabIndex = 18;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnVolver
             // 
@@ -75,15 +67,23 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
-            // btnEliminar
+            // label1
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(234, 100);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(113, 23);
-            this.btnEliminar.TabIndex = 18;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Seleccione usuario que desea eliminar";
+            // 
+            // cmbBoxUsuarios
+            // 
+            this.cmbBoxUsuarios.FormattingEnabled = true;
+            this.cmbBoxUsuarios.Location = new System.Drawing.Point(27, 47);
+            this.cmbBoxUsuarios.Name = "cmbBoxUsuarios";
+            this.cmbBoxUsuarios.Size = new System.Drawing.Size(320, 21);
+            this.cmbBoxUsuarios.TabIndex = 2;
+            this.cmbBoxUsuarios.SelectionChangeCommitted += new System.EventHandler(this.cmbBoxUsuarios_SelectionChangeCommitted);
             // 
             // EliminarUsuario
             // 
@@ -92,6 +92,7 @@
             this.ClientSize = new System.Drawing.Size(381, 145);
             this.Controls.Add(this.panel1);
             this.Name = "EliminarUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar usuario";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
