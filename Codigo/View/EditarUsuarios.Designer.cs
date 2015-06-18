@@ -73,108 +73,110 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Nombre ";
+            this.label2.Text = "Nombre:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(27, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Apellido";
+            this.label3.Text = "Apellido:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(27, 160);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Direccion";
+            this.label4.Text = "Dirección:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(27, 263);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.Size = new System.Drawing.Size(64, 13);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Contraseña";
+            this.label5.Text = "Contraseña:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(27, 295);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 13);
+            this.label6.Size = new System.Drawing.Size(127, 13);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Confirmacion contraseña";
+            this.label6.Text = "Confirmación contraseña:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(27, 197);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 13);
+            this.label7.Size = new System.Drawing.Size(86, 13);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Telefono celular";
+            this.label7.Text = "Teléfono celular:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(27, 228);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(26, 13);
+            this.label8.Size = new System.Drawing.Size(29, 13);
             this.label8.TabIndex = 8;
-            this.label8.Text = "Mail";
+            this.label8.Text = "Mail:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(105, 90);
+            this.txtNombre.Location = new System.Drawing.Point(157, 90);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(201, 20);
+            this.txtNombre.Size = new System.Drawing.Size(149, 20);
             this.txtNombre.TabIndex = 9;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(105, 126);
+            this.txtApellido.Location = new System.Drawing.Point(157, 126);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(201, 20);
+            this.txtApellido.Size = new System.Drawing.Size(149, 20);
             this.txtApellido.TabIndex = 10;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(105, 157);
+            this.txtDireccion.Location = new System.Drawing.Point(157, 157);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(201, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(149, 20);
             this.txtDireccion.TabIndex = 11;
             // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(132, 194);
+            this.txtCelular.Location = new System.Drawing.Point(157, 194);
             this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(175, 20);
+            this.txtCelular.Size = new System.Drawing.Size(150, 20);
             this.txtCelular.TabIndex = 12;
             // 
             // txtMail
             // 
-            this.txtMail.Location = new System.Drawing.Point(105, 225);
+            this.txtMail.Location = new System.Drawing.Point(157, 225);
             this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(201, 20);
+            this.txtMail.Size = new System.Drawing.Size(149, 20);
             this.txtMail.TabIndex = 13;
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(105, 260);
+            this.txtPass.Location = new System.Drawing.Point(157, 260);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(201, 20);
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(149, 20);
             this.txtPass.TabIndex = 14;
             // 
             // txtPassConfir
             // 
             this.txtPassConfir.Location = new System.Drawing.Point(157, 292);
             this.txtPassConfir.Name = "txtPassConfir";
+            this.txtPassConfir.PasswordChar = '*';
             this.txtPassConfir.Size = new System.Drawing.Size(149, 20);
             this.txtPassConfir.TabIndex = 15;
             // 
