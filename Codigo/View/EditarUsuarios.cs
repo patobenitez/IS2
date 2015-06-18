@@ -68,13 +68,6 @@ namespace ObligatorioIS2.View
                 venResultadoNuevoUsu.Show();
                 return;
             }
-            if (!ValidateAddress(txtDireccion.Text))
-            {
-                Hide();
-                var venResultadoNuevoUsu = new ResultadoNuevoUsuario(false, "Direccion invalida");
-                venResultadoNuevoUsu.Show();
-                return;
-            }
             if (!ValidPhone(txtCelular.Text))
             {
                 Hide();
@@ -109,11 +102,6 @@ namespace ObligatorioIS2.View
         private static bool ValidPhone(string phone)
         {
             return phone.Length == 9 && Regex.IsMatch(phone, "^[0-9]+$");
-        }
-
-        private static bool ValidateAddress(string address)
-        {
-            return Regex.IsMatch(address, "^(?=.*[A-Za-z0-9])[A-Za-z0-9 _]+$");
         }
 
         private static bool ValidPassword(string password)

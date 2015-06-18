@@ -85,7 +85,6 @@ C:\Projects\IS2\Codigo\obj\Debug\ObligatorioIS2.exe
 C:\Projects\IS2\Codigo\obj\Debug\ObligatorioIS2.pdb
 C:\Projects\IS2\Codigo\bin\Debug\ObligatorioIS2.exe
 C:\Projects\IS2\Codigo\bin\Debug\ObligatorioIS2.pdb
-C:\Projects\IS2\Codigo\obj\Debug\ObligatorioIS2.csprojResolveAssemblyReference.cache
 C:\Projects\IS2\Codigo\obj\Debug\ObligatorioIS2.View.BuscarProducto.resources
 C:\Projects\IS2\Codigo\obj\Debug\ObligatorioIS2.View.DetalleDeProducto.resources
 C:\Projects\IS2\Codigo\obj\Debug\ObligatorioIS2.View.EditarUsuarios.resources
