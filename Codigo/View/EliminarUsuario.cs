@@ -25,24 +25,37 @@ namespace ObligatorioIS2.View
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            try
+            if (cmbBoxUsuarios.Items.Count == 0)
             {
-               var result = MessageBox.Show(string.Format("Seguro que desea eliminar el usuario {0}{1}", Usuario.Nombre, Usuario.Apellido) , "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-                if (result != DialogResult.Yes)
-                {
-                    return;
-                }
-                Sistema.GetInstance().ListaUsuarios.Remove(Usuario);
-                MessageBox.Show("Error usuario se elimino correctamente", "Eliminar usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                cmbBoxUsuarios.Items.Clear();
-                foreach (var usu in Sistema.GetInstance().ListaUsuarios)
-                {
-                    cmbBoxUsuarios.Items.Add(usu);
-                }
+                MessageBox.Show("Debe seleccionar un usuario para eliminar");
             }
-            catch {
-                MessageBox.Show("Error al eliminar el usuario seleccionado", "Eliminar usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Hide();
+            else
+            {
+                try
+                {
+                    var result =
+                        MessageBox.Show(
+                            string.Format("Seguro que desea eliminar el usuario {0}{1}", Usuario.Nombre,
+                                Usuario.Apellido), "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                    if (result != DialogResult.Yes)
+                    {
+                        return;
+                    }
+                    Sistema.GetInstance().ListaUsuarios.Remove(Usuario);
+                    MessageBox.Show("Error usuario se elimino correctamente", "Eliminar usuario", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                    cmbBoxUsuarios.Items.Clear();
+                    foreach (var usu in Sistema.GetInstance().ListaUsuarios)
+                    {
+                        cmbBoxUsuarios.Items.Add(usu);
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Error al eliminar el usuario seleccionado", "Eliminar usuario",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Hide();
+                }
             }
         }
 
