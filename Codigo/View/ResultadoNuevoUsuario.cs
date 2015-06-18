@@ -15,8 +15,8 @@ namespace ObligatorioIS2.View
         private void button1_Click(object sender, EventArgs e)
         {
             Hide();
-            var venNuevoUsu = new NuevoUsuario();
-            venNuevoUsu.Show();
+            var venEditarUsu = new EditarUsuarios();
+            venEditarUsu.Show();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using ObligatorioIS2.Business_Logic;
@@ -11,7 +12,7 @@ namespace ObligatorioIS2.View
         public EditarUsuarios()
         {
             InitializeComponent();
-            foreach (Usuario usu in Sistema.GetInstance().ListaUsuarios) {
+            foreach (var usu in Sistema.GetInstance().ListaUsuarios) {
                 cmbBoxUsuarios.Items.Add(usu);
             }
             
@@ -26,7 +27,8 @@ namespace ObligatorioIS2.View
             txtCelular.Text = Usuario.Celular;
             txtDireccion.Text = Usuario.Direccion;
             txtMail.Text = Usuario.Email;
-            
+            txtPass.Text = Usuario.Password;
+            txtPassConfir.Text = Usuario.Password;
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -88,16 +90,17 @@ namespace ObligatorioIS2.View
                 return;
             }
 
-            foreach (Usuario usu in Sistema.GetInstance().ListaUsuarios) {
-                if (Usuario.Nombre == usu.Nombre && Usuario.Apellido == usu.Apellido) {
-                    usu.Nombre = txtNombre.Text;
-                    usu.Apellido = txtApellido.Text; 
-                    usu.Celular = txtCelular.Text ;
-                    usu.Direccion =txtDireccion.Text ;
-                    usu.Email =    txtMail.Text ;
-                    usu.Password = txtPass.Text;                                   
-                }
+            foreach (var usu in Sistema.GetInstance().ListaUsuarios
+                .Where(usu => Usuario.Nombre == usu.Nombre && Usuario.Apellido == usu.Apellido))
+            {
+                usu.Nombre = txtNombre.Text;
+                usu.Apellido = txtApellido.Text;
+                usu.Celular = txtCelular.Text;
+                usu.Direccion = txtDireccion.Text;
+                usu.Email = txtMail.Text;
+                usu.Password = txtPass.Text;
             }
+
             Hide();
             var venResultadoActuUsua = new ResultadoActUsuario(true, "El usuario se actualizo correctamente!");
             venResultadoActuUsua.Show();          
