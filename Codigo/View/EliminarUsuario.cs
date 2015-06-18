@@ -7,6 +7,7 @@ namespace ObligatorioIS2.View
     public partial class EliminarUsuario : Form
     {
         public Usuario Usuario { get; set; }
+
         public EliminarUsuario()
         {
             InitializeComponent();
@@ -16,7 +17,6 @@ namespace ObligatorioIS2.View
             }
             Usuario = new Usuario();
         }
-
 
         private void cmbBoxUsuarios_SelectionChangeCommitted(object sender, EventArgs e)
         {
